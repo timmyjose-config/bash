@@ -19,8 +19,8 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/Software/Idris2:$PATH"
 
 # jdk
-export PATH="$HOME/Library/Java/JavaVirtualMachines/openjdk-14/Contents/Home/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home -v 14)
+export PATH="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin:$PATH"
+export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin"
 
 # opam config
 eval $(opam env)
