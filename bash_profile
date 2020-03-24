@@ -20,7 +20,7 @@ export PATH="$HOME/Software/Idris2:$PATH"
 
 # jdk
 export PATH="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin:$PATH"
-export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin"
+export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk"
 
 # opam config
 eval $(opam env)
@@ -41,5 +41,8 @@ export PATH="$HOME/PostgreSQL/pg10/bin:$PATH"
 
 # miscellaneous
 export PATH="/usr/local/opt/libressl/bin:$PATH"
+
+# nand2tetris
+export PATH="$HOME/dev/study/elements_of_computing/nand2tetris/tools":$PATH"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
