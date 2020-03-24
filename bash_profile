@@ -43,6 +43,6 @@ export PATH="$HOME/PostgreSQL/pg10/bin:$PATH"
 export PATH="/usr/local/opt/libressl/bin:$PATH"
 
 # nand2tetris
-export PATH="$HOME/dev/study/elements_of_computing/nand2tetris/tools":$PATH"
+export PATH="$HOME/dev/study/elements_of_computing/nand2tetris/tools:$PATH"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
