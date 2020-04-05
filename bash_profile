@@ -3,6 +3,12 @@ export LC_MESSAGES="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 
+# idris 
+export PATH="$HOME/software/idris:$PATH"
+
+# zig
+export PATH="$HOME/software/zig/build/bin:$PATH"
+
 # gcc
 export PATH="/usr/local/Cellar/gcc/9.2.0/bin/:$PATH"
 
@@ -46,3 +52,6 @@ export PATH="/usr/local/opt/libressl/bin:$PATH"
 export PATH="$HOME/dev/study/elements_of_computing/nand2tetris/tools:$PATH"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
+
+# llvm config
+export PATH="/usr/local/opt/llvm/bin:$PATH"
