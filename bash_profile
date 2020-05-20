@@ -4,13 +4,10 @@ export LC_CTYPE="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 
 # idris 
-export PATH="$HOME/software/idris:$PATH"
+export PATH="$PATH:$HOME/.idris2/bin"
 
 # zig
 export PATH="$HOME/software/zig/build/bin:$PATH"
-
-# gcc
-export PATH="/usr/local/Cellar/gcc/9.2.0/bin/:$PATH"
 
 export PATH=$PATH:/bin:/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Library/TeX/texbin:$HOME/.local/bin
 
@@ -25,16 +22,18 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/Software/Idris2:$PATH"
 
 # jdk
-export PATH="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin:$PATH"
-export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk"
+#export PATH="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"
+#export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk"
 
 # opam config
 eval $(opam env)
 test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 ## llvm config
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+#export PATH="/usr/local/opt/llvm/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/llvm/lib"
+#export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # rbenv 
 eval "$(rbenv init -)"
@@ -49,9 +48,12 @@ export PATH="$HOME/PostgreSQL/pg10/bin:$PATH"
 export PATH="/usr/local/opt/libressl/bin:$PATH"
 
 # nand2tetris
-export PATH="$HOME/dev/study/elements_of_computing/nand2tetris/tools:$PATH"
+export PATH="$HOME/dev/resources/nand2tetris/tools:$PATH"
+
+# openjdk config
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# adacore config
+export PATH="$PATH:$HOME/software/ada/bin"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
-
-# llvm config
-export PATH="/usr/local/opt/llvm/bin:$PATH"
