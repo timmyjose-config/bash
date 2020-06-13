@@ -56,4 +56,7 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 # adacore config
 export PATH="$PATH:$HOME/software/ada/bin"
 
+# alire config
+export PATH="$HOME/dev/forks/alire/bin:$PATH"
+
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
