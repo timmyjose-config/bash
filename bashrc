@@ -21,17 +21,7 @@ alias pgrestart="pg_ctl -D ~/.local/postgresdb restart"
 alias pgstatus="pg_ctl -D ~/.local/postgresdb status"
 alias py=python3
 alias python=python3
+alias pip=pip3
 
-# custom gcc
-alias gcc=gcc-9
-alias cc=gcc-9
-alias g++=g++-9
-alias c99=gcc-9
-
-# nand2tetris
-alias HardwareSimulator="HardwareSimulator.sh"
-alias CPUEmulator="CPUEmulator.sh"
-alias Assembler="Assembler.sh"
-alias VMEmulator="VMEmulator.sh"
-alias JackCompiler="JackCompiler.sh"
-
+# for now, maybe for good?
+alias vim=nvim
