@@ -25,3 +25,8 @@ alias pip=pip3
 
 # for now, maybe for good?
 alias vim=nvim
+
+# create and change into directory
+function ccd {
+  mkdir -p "$1" && cd "$1"
+}
