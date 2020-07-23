@@ -7,7 +7,7 @@ export LC_COLLATE="en_US.UTF-8"
 export PATH="$PATH:$HOME/.idris2/bin"
 
 # zig
-export PATH="$HOME/software/zig/build/bin:$PATH"
+export PATH="$HOME/.local/zig/"
 
 export PATH=$PATH:/bin:/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Library/TeX/texbin:$HOME/.local/bin
 
@@ -22,18 +22,11 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export PATH="$HOME/Software/Idris2:$PATH"
 
 # jdk
-#export PATH="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk/bin:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"
-#export JAVA_HOME="$HOME/dev/forks/openjdk/jdk-jdk/build/macosx-x86_64-server-release/jdk"
 
 # opam config
 eval $(opam env)
 test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-## llvm config
-#export PATH="/usr/local/opt/llvm/bin:$PATH"
-#export LDFLAGS="-L/usr/local/opt/llvm/lib"
-#export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # rbenv 
 eval "$(rbenv init -)"
@@ -58,5 +51,11 @@ export PATH="$PATH:$HOME/software/ada/bin"
 
 # alire config
 export PATH="$HOME/dev/forks/alire/bin:$PATH"
+
+# use gcc instead of native clang
+export PATH="/usr/local/Cellar/gcc/10.1.0/bin:$PATH"
+
+# j config
+export PATH="$PATH:$HOME/software/jsource/jlibrary/bin"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
