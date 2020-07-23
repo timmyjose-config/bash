@@ -7,7 +7,7 @@ export LC_COLLATE="en_US.UTF-8"
 export PATH="$PATH:$HOME/.idris2/bin"
 
 # zig
-export PATH="$HOME/.local/zig/"
+export PATH="$PATH:$HOME/software/zig/build/bin"
 
 export PATH=$PATH:/bin:/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Library/TeX/texbin:$HOME/.local/bin
 
@@ -52,10 +52,10 @@ export PATH="$PATH:$HOME/software/ada/bin"
 # alire config
 export PATH="$HOME/dev/forks/alire/bin:$PATH"
 
-# use gcc instead of native clang
+# gcc config
 export PATH="/usr/local/Cellar/gcc/10.1.0/bin:$PATH"
 
-# j config
-export PATH="$PATH:$HOME/software/jsource/jlibrary/bin"
+# llvm config
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
