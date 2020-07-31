@@ -58,4 +58,9 @@ export PATH="/usr/local/Cellar/gcc/10.1.0/bin:$PATH"
 # llvm config
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
+# ATS config
+export PATSHOME="$HOME/software/ATS2-Postiats/"
+export PATH="$PATH:$PATSHOME/bin"
+export PATSCONTRIB="$HOME/software/ATS2-Postiats-contrib"
+
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
